@@ -87,7 +87,7 @@
         </a>
         <div class="modal">
             <div class="modal_half modal_about">
-                <figure class="modal_img_container">
+                <figure class="modal_img_container modal_img_phone">
                     <img src="./assets/me.jpeg" class="modal_img">
                 </figure>
                 <h3 class="modal_title black">Here's a bit about me.</h3>
@@ -97,6 +97,9 @@
                     for building products which postively impact people.
                     <br>
                     I have experience building full stack applications, from design to implementation.
+                </p>
+                <p class="modal_para orange modal_contact_phone">
+                    <b>I'm currently open to new opportunities. Let's have a chat!</b>
                 </p>
                 <div class="social_list">
                     <a href="https://www.linkedin.com/in/beltranjuanp/" class="social_link click" target="_blank">
@@ -108,12 +111,20 @@
                     <a href="./assets/resume.pdf" class="social_link click" target="_blank">
                         <i class="fas fa-file-pdf"></i>
                     </a>
+                    <a href="mailto:juanbeltran2994@gmail.com" class="social_link click modal_contact_link_phone" target="_blank">
+                        <i class="fas fa-envelope"></i>
+                    </a>
                 </div>
+                <i class="fas fa-times modal_exit click modal_exit_phone" onclick="toggleModal()"></i>
             </div>
             <div class="modal_half modal_contact">
+                <figure class="modal_img_container_desktop">
+                    <img src="./assets/me.jpeg" class="modal_img_desktop">
+                </figure>
                 <h3 class="modal_title white">Let's have a chat!</h3>
                 <h4 class="modal_sub white">I'm currently open to new opportunities.</h4>
-                <form id="contact_form" onsubmit="contact(event)">
+                <button onclick="sendEmail()" class="form_submit" type="button">Email Me!</button>
+                <!-- <form id="contact_form" onsubmit="contact(event)">
                     <div class="form_item">
                         <label class="form_label">Name</label>
                         <input type="text" name="user_name" class="input">
@@ -133,7 +144,7 @@
                 </div>
                 <div class="modal_overlay modal_overlay_success">
                     Thanks!
-                </div>
+                </div> -->
                 <i class="fas fa-times modal_exit click" onclick="toggleModal()"></i>
             </div>
         </div>

@@ -28,13 +28,22 @@ function contact(event) {
 }
 
 /**
+ * This function just acts like a link to send email to me.
+ */
+function sendEmail() {
+    window.location.href = "mailto:juanbeltran2994@gmail.com";
+}
+
+/**
  * This function toggles the modal on and off
  */
 function toggleModal() {
     if (!document.body.classList.contains("modal_open")) {
         document.body.classList += " modal_open"
+        document.body.classList += " stop_scrolling"
     } else {
         document.body.classList.remove("modal_open")
+        document.body.classList.remove("stop_scrolling")
     }
 }
 
